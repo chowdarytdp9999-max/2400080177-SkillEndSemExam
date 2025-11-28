@@ -1,0 +1,86 @@
+/* Dark Theme Stylesheet for University Student Portal */
+
+:root {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --text-primary: #e8e8e8;
+    --text-secondary: #a8a8a8;
+    --accent-color: #667eea;
+    --accent-hover: #764ba2;
+}
+
+body.dark-mode {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+body.dark-mode header {
+    background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+body.dark-mode header h1 {
+    color: var(--accent-color);
+}
+
+body.dark-mode header p {
+    color: var(--text-secondary);
+}
+
+body.dark-mode nav {
+    background-color: #1a1a1a;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+body.dark-mode nav a {
+    color: var(--text-primary);
+}
+
+body.dark-mode nav a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+body.dark-mode main {
+    background-color: var(--bg-primary);
+}
+
+body.dark-mode section {
+    background-color: var(--bg-secondary);
+    border-left: 4px solid var(--accent-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode section h2 {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+}
+
+body.dark-mode section p,
+body.dark-mode section li {
+    color: var(--text-secondary);
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1a;
+    border-top: 2px solid var(--accent-color);
+    color: var(--text-secondary);
+}
+
+/* Scrollbar Styling */
+body.dark-mode::-webkit-scrollbar {
+    width: 10px;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 5px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-hover);
+}
